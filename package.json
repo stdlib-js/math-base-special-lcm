@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/math-base-special-lcm",
+  "version": "0.0.0",
+  "description": "Compute the least common multiple (lcm).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-lcm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "math",
+    "mathematics",
+    "euclid",
+    "euclidean",
+    "least common multiple",
+    "lowest common multiple",
+    "smallest common multiple",
+    "lowest common denominator",
+    "lcm",
+    "lcd",
+    "discrete",
+    "arithmetic",
+    "integer",
+    "gcd"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
