@@ -54,7 +54,7 @@ The [least common multiple][lcm] (lcm) of two non-zero integers `a` and `b` is t
 ## Usage
 
 ```javascript
-import lcm from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@deno/mod.js';
+import lcm from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@v0.1.0-deno/mod.js';
 ```
 
 #### lcm( a, b )
@@ -118,7 +118,7 @@ v = lcm( 48, NaN );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import lcm from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@deno/mod.js';
+import lcm from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@v0.1.0-deno/mod.js';
 
 var a;
 var b;
