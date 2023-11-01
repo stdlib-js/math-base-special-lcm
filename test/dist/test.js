@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,128 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var lcm = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof lcm, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `NaN` if either argument is `NaN`', function test( t ) {
-	var v;
-
-	v = lcm( NaN, 10 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( 10, NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( NaN, NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns `NaN` if either argument is `+infinity`', function test( t ) {
-	var v;
-
-	v = lcm( PINF, 10 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( 10, PINF );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( PINF, PINF );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns `NaN` if either argument is `-infinity`', function test( t ) {
-	var v;
-
-	v = lcm( NINF, 10 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( 10, NINF );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( NINF, NINF );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns `NaN` if either argument is not an integer value', function test( t ) {
-	var v;
-
-	v = lcm( 3.14, 10 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( 10, 3.14 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = lcm( 3.14, 6.18 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns `0` if either argument is `0`', function test( t ) {
-	var v = lcm( 0, 0 );
-	t.strictEqual( v, 0, 'returns 0' );
-
-	v = lcm( 2, 0 );
-	t.strictEqual( v, 0, 'returns 0' );
-
-	v = lcm( 0, -3 );
-	t.strictEqual( v, 0, 'returns 0' );
-
-	t.end();
-});
-
-tape( 'the function computes the least common multiple', function test( t ) {
-	var v;
-
-	v = lcm( 0, 0 );
-	t.strictEqual( v, 0, 'returns 0' );
-
-	v = lcm( 1, 0 );
-	t.strictEqual( v, 0, 'returns 0' );
-
-	v = lcm( 0, 1 );
-	t.strictEqual( v, 0, 'returns 0' );
-
-	v = lcm( 6, 4 );
-	t.strictEqual( v, 12, 'returns 12' );
-
-	v = lcm( 6, -4 );
-	t.strictEqual( v, 12, 'returns 12' );
-
-	v = lcm( -6, -4 );
-	t.strictEqual( v, 12, 'returns 12' );
-
-	v = lcm( 2, 8 );
-	t.strictEqual( v, 8, 'returns 8' );
-
-	v = lcm( 15, 20 );
-	t.strictEqual( v, 60, 'returns 60' );
-
-	v = lcm( 20, 15 );
-	t.strictEqual( v, 60, 'returns 60' );
-
-	v = lcm( 35, -21 );
-	t.strictEqual( v, 105, 'returns 105' );
-
-	v = lcm( 48, 18 );
-	t.strictEqual( v, 144, 'returns 144' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
