@@ -47,38 +47,30 @@ The [least common multiple][lcm] (lcm) of two non-zero integers `a` and `b` is t
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-lcm
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-lcm = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var lcm = require( 'path/to/vendor/umd/math-base-special-lcm/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.lcm;
-})();
-</script>
+var lcm = require( '@stdlib/math-base-special-lcm' );
 ```
 
 #### lcm( a, b )
@@ -139,15 +131,10 @@ v = lcm( 48, NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var lcm = require( '@stdlib/math-base-special-lcm' );
 
 var a;
 var b;
@@ -160,11 +147,6 @@ for ( i = 0; i < 100; i++ ) {
     v = lcm( a, b );
     console.log( 'lcm(%d,%d) = %d', a, b, v );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -219,7 +201,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -266,7 +248,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/gcd]: https://github.com/stdlib-js/math-base-special-gcd/tree/umd
+[@stdlib/math/base/special/gcd]: https://github.com/stdlib-js/math-base-special-gcd
 
 <!-- </related-links> -->
 
