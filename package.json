@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-lcm",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Compute the least common multiple (lcm).",
   "license": "Apache-2.0",
   "author": {
@@ -37,8 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-assert-is-nan": "^0.1.1",
-    "@stdlib/math-base-special-gcd": "^0.1.0"
+    "@stdlib/math-base-assert-is-nan": "^0.2.0",
+    "@stdlib/math-base-special-gcd": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/constants-float64-ninf": "^0.1.1",
