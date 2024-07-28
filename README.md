@@ -56,6 +56,11 @@ The [least common multiple][lcm] (lcm) of two non-zero integers `a` and `b` is t
 To use in Observable,
 
 ```javascript
+lcm = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-lcm/tags). For example,
+
+```javascript
 lcm = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@v0.3.0-umd/browser.js' )
 ```
 
@@ -68,7 +73,7 @@ var lcm = require( 'path/to/vendor/umd/math-base-special-lcm/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@v0.3.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -145,7 +150,7 @@ v = lcm( 48, NaN );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@v0.3.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-lcm@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
