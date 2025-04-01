@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-25)
+## Unreleased (2025-04-01)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`86a5626`](https://github.com/stdlib-js/stdlib/commit/86a5626e1cb0cf5cb208e94c48b79a109025cc8f) - **docs:** replace manual `for` loop in examples [(#6471)](https://github.com/stdlib-js/stdlib/pull/6471) _(by Harsh, stdlib-bot)_
 -   [`90d0d11`](https://github.com/stdlib-js/stdlib/commit/90d0d1193f14ab787e2d75d6f862d03e2105006e) - **chore:** update random value generation and test messages [(#6346)](https://github.com/stdlib-js/stdlib/pull/6346) _(by Harsh)_
 
 </details>
