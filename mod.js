@@ -1,4 +1,0 @@
-// Copyright (c) 2025 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./mod.d.ts" />
-function r(r){return r!=r}var n=Math.floor;function f(r){return n(r)===r}var t=Number.POSITIVE_INFINITY,u=Number.NEGATIVE_INFINITY,o=2147483647;function e(n,e){var N;return 0===n||0===e?0:(n<0&&(n=-n),e<0&&(e=-e),N=function(n,e){return r(n)||r(e)||n===t||e===t||n===u||e===u?NaN:f(n)&&f(e)?(n<0&&(n=-n),e<0&&(e=-e),n<=o&&e<=o?function(r,n){var f,t=0;if(0===r)return n;if(0===n)return r;for(;0==(1&r)&&0==(1&n);)r>>>=1,n>>>=1,t+=1;for(;0==(1&r);)r>>>=1;for(;n;){for(;0==(1&n);)n>>>=1;r>n&&(f=n,n=r,r=f),n-=r}return r<<t}(n,e):function(r,n){var f,t=1;if(0===r)return n;if(0===n)return r;for(;r%2==0&&n%2==0;)r/=2,n/=2,t*=2;for(;r%2==0;)r/=2;for(;n;){for(;n%2==0;)n/=2;r>n&&(f=n,n=r,r=f),n-=r}return t*r}(n,e)):NaN}(n,e),r(N)?N:n/N*e)}export{e as default};
-//# sourceMappingURL=mod.js.map
